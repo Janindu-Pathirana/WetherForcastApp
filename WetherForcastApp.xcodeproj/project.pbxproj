@@ -14,6 +14,9 @@
 		BAAE3C482B1A0B3200F567ED /* WetherForcastAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE3C472B1A0B3200F567ED /* WetherForcastAppTests.swift */; };
 		BAAE3C522B1A0B3300F567ED /* WetherForcastAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE3C512B1A0B3300F567ED /* WetherForcastAppUITests.swift */; };
 		BAAE3C542B1A0B3300F567ED /* WetherForcastAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE3C532B1A0B3300F567ED /* WetherForcastAppUITestsLaunchTests.swift */; };
+		BAAE3C662B1A0D1800F567ED /* DateFormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE3C652B1A0D1800F567ED /* DateFormatterUtils.swift */; };
+		BAAE3C682B1A0D6C00F567ED /* WindDirHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAE3C672B1A0D6C00F567ED /* WindDirHelper.swift */; };
+		BAAE3C6A2B1A0E4600F567ED /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BAAE3C692B1A0E4600F567ED /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		BAAE3C4D2B1A0B3300F567ED /* WetherForcastAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WetherForcastAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAAE3C512B1A0B3300F567ED /* WetherForcastAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherForcastAppUITests.swift; sourceTree = "<group>"; };
 		BAAE3C532B1A0B3300F567ED /* WetherForcastAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherForcastAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BAAE3C652B1A0D1800F567ED /* DateFormatterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterUtils.swift; sourceTree = "<group>"; };
+		BAAE3C672B1A0D6C00F567ED /* WindDirHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindDirHelper.swift; sourceTree = "<group>"; };
+		BAAE3C692B1A0E4600F567ED /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		BAAE3C2A2B1A0B2F00F567ED = {
 			isa = PBXGroup;
 			children = (
+				BAAE3C692B1A0E4600F567ED /* .gitignore */,
 				BAAE3C352B1A0B2F00F567ED /* WetherForcastApp */,
 				BAAE3C462B1A0B3200F567ED /* WetherForcastAppTests */,
 				BAAE3C502B1A0B3300F567ED /* WetherForcastAppUITests */,
@@ -94,6 +101,10 @@
 		BAAE3C352B1A0B2F00F567ED /* WetherForcastApp */ = {
 			isa = PBXGroup;
 			children = (
+				BAAE3C642B1A0BBB00F567ED /* Views */,
+				BAAE3C622B1A0B9A00F567ED /* ViewModels */,
+				BAAE3C612B1A0B8E00F567ED /* Models */,
+				BAAE3C602B1A0B7500F567ED /* Utilities */,
 				BAAE3C362B1A0B2F00F567ED /* WetherForcastAppApp.swift */,
 				BAAE3C382B1A0B2F00F567ED /* ContentView.swift */,
 				BAAE3C3A2B1A0B3200F567ED /* Assets.xcassets */,
@@ -125,6 +136,36 @@
 				BAAE3C532B1A0B3300F567ED /* WetherForcastAppUITestsLaunchTests.swift */,
 			);
 			path = WetherForcastAppUITests;
+			sourceTree = "<group>";
+		};
+		BAAE3C602B1A0B7500F567ED /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BAAE3C652B1A0D1800F567ED /* DateFormatterUtils.swift */,
+				BAAE3C672B1A0D6C00F567ED /* WindDirHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BAAE3C612B1A0B8E00F567ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BAAE3C622B1A0B9A00F567ED /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BAAE3C642B1A0BBB00F567ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAAE3C3E2B1A0B3200F567ED /* Preview Assets.xcassets in Resources */,
+				BAAE3C6A2B1A0E4600F567ED /* .gitignore in Resources */,
 				BAAE3C3B2B1A0B3200F567ED /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAAE3C392B1A0B2F00F567ED /* ContentView.swift in Sources */,
+				BAAE3C662B1A0D1800F567ED /* DateFormatterUtils.swift in Sources */,
 				BAAE3C372B1A0B2F00F567ED /* WetherForcastAppApp.swift in Sources */,
+				BAAE3C682B1A0D6C00F567ED /* WindDirHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
